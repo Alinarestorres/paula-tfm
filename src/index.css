@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* BioRhyme se carga vía <link> en index.html para evitar warnings de orden
+   de @import cuando Tailwind v4 inlinea su CSS al compilar. */
+
+/* ============================================================
+   DESIGN TOKENS — Sistema de diseño TFM Paula
+   Fuente: Figma / Design Tokens (node 1:149)
+   ============================================================ */
+
+@theme {
+  /* ── Tipografía ── */
+  /* BioRhyme: serif editorial para displays y datos protagonistas */
+  /* Helvetica Neue: sans neutra para cuerpo y UI */
+  --font-display: "BioRhyme", Georgia, serif;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* ── Accent / Coral ── */
+  --color-accent-50:  #FDF1ED;
+  --color-accent-100: #F9DCD2;
+  --color-accent-200: #F2B5A0;
+  --color-accent-300: #EC9279;
+  --color-accent-400: #E4705B;
+  --color-accent-500: #E06E58;
+  --color-accent-600: #C95542;
+  --color-accent-700: #A03E2E;
+  --color-accent-800: #762A1F;
+  --color-accent-900: #4F1B14;
+
+  /* ── Secondary / Azul ── */
+  --color-secondary-50:  #EFF6FC;
+  --color-secondary-100: #D6E8F8;
+  --color-secondary-200: #A2D5F8;
+  --color-secondary-300: #98D2F3;
+  --color-secondary-400: #508BC7;
+  --color-secondary-500: #3579B5;
+  --color-secondary-600: #254B9B;
+  --color-secondary-700: #1A3673;
+  --color-secondary-800: #102452;
+  --color-secondary-900: #081532;
+
+  /* ── Surface ── */
+  --color-surface-bg:       #FDFDFA;
+  --color-surface-fg:       #FFFFFF;
+  --color-surface-elevated: #F7F5F1;
+  --color-surface-inverse:  #252525;
+
+  /* ── Border ── */
+  --color-border-subtle:  #EAE7E2;
+  --color-border-default: #D4D0C9;
+  --color-border-strong:  #A8A39A;
+
+  /* ── Text ── */
+  --color-text-primary:   #1A1A1C;
+  --color-text-secondary: #48464A;
+  --color-text-tertiary:  #78757A;
+  --color-text-disabled:  #B4B5B5;
+  --color-text-inverse:   #FDFDFA;
+  --color-text-accent:    #C95542;
+
+  /* ── Semantic ── */
+  --color-success: #459662;
+  --color-warning: #E89B38;
+  --color-danger:  #C04030;
+  --color-info:    #3579B5;
+
+  /* ── Data Viz — 5 colores categóricos ── */
+  --color-data-1: #E4705B; /* Coral   */
+  --color-data-2: #3579B5; /* Azul    */
+  --color-data-3: #E89B38; /* Ámbar   */
+  --color-data-4: #459662; /* Verde   */
+  --color-data-5: #67477F; /* Púrpura */
+}
+
+/* ============================================================
+   BASE STYLES — Dark theme global para "Las que sostienen el centro"
+   ============================================================ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-surface-inverse);
+    color: var(--color-text-inverse);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
