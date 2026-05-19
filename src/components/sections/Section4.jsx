@@ -139,8 +139,11 @@ export default function Section4() {
         extraTextPosition="right"
       />
 
-      {/* ── Bloque 3: opiniones en 3 filas con auto-numeración 1..4 ── */}
-      <OpinionCardGroup rows={OPINION_ROWS} />
+      {/* ── Bloque 3: opiniones en 3 filas con auto-numeración 1..4.
+            mt-12 añade 48px sobre los 40px (gap-10) de la sección →
+            88px efectivos entre el TestimonialCardStack y el bloque
+            "Otras trabajadoras…" para una separación clara. */}
+      <OpinionCardGroup rows={OPINION_ROWS} className="mt-12" />
     </section>
   )
 }
