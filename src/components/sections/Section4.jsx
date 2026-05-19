@@ -26,9 +26,11 @@ import { OpinionCardGroup } from '../OpinionCard'
      Auto-numeración 1..4.
    ════════════════════════════════════════════════════════════════ */
 
+/* Continuación de la numeración global de testimonios escritos.
+   Section 1 abre con 001-002; aquí seguimos en 003-004. */
 const TESTIMONIALS = [
   {
-    number: '001',
+    number: '003',
     name: 'Laura',
     age: 36,
     quote: 'Las malas condiciones y los horarios interminables existen porque nosotros mismos queremos consumir a cualquier hora. En los países de origen de muchos turistas internacionales, el comercio cierra mucho antes. Los límites empiezan por nosotros mismos.',
@@ -36,7 +38,7 @@ const TESTIMONIALS = [
       'Laura, trabajadora del sector, apunta a la responsabilidad compartida y hace autocrítica.',
   },
   {
-    number: '002',
+    number: '004',
     name: 'Natalia',
     age: 27,
     quote: 'Un turista responsable no afectaría negativamente a nuestro día a día, pero València está en venta y el turismo nos está echando de nuestra propia ciudad. A la masificación estacional, que genera picos de precariedad y contratos basura, se suma la falta de civismo. Mi calidad de vida ha caído en picado; el problema de la vivienda me afecta emocionalmente de forma grave.',

@@ -23,28 +23,30 @@ import AudioCardCarousel from '../AudioCardCarousel'
    · Párrafo final
    ════════════════════════════════════════════════════════════════ */
 
+/* Numeración global continua de testimonios auditivos en la landing.
+   Section 2 abre con 001-002; aquí continuamos en 003-006. */
 const AUDIO_ITEMS = [
   {
     label: 'TESTIMONIO AUDITIVO',
-    number: '001',
+    number: '003',
     title: 'El barrio del Carmen ya no es lo que era',
     author: 'Lucía Martínez – Limpiadora de Hotel',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
-    number: '002',
+    number: '004',
     title: 'Ya no puedo acceder a Ciutat Vella',
     author: 'Cristina García – Dependienta',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
-    number: '003',
+    number: '005',
     title: 'Mi vida en València es trabajar y dormir',
     author: 'Pendiente – Pendiente de definir',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
-    number: '004',
+    number: '006',
     title: 'El turismo nos ha cambiado el barrio',
     author: 'Pendiente – Pendiente de definir',
   },

@@ -182,9 +182,12 @@ export default function Section6() {
         </div>
 
         <div className="self-start w-full">
+          {/* Última card de audio de la landing en el conteo global:
+              Section 2: 001-002 · Section 3: 003-006 · Section 5: 007-008 ·
+              aquí: 009. */}
           <AudioCard
             label="TESTIMONIO AUDITIVO"
-            number="001"
+            number="009"
             title="El barrio del Carmen ya no es lo que era"
             author="Lucía Martínez – Limpiadora de Hotel"
           />

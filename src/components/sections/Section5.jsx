@@ -47,16 +47,18 @@ const PRICE_CARDS = [
   },
 ]
 
+/* Continuación de la numeración global de testimonios auditivos.
+   Section 2: 001-002 · Section 3: 003-006 · aquí: 007-008. */
 const AUDIO_ITEMS = [
   {
     label: 'TESTIMONIO AUDITIVO',
-    number: '001',
+    number: '007',
     title: 'El barrio del Carmen ya no es lo que era',
     author: 'Lucía Martínez – Limpiadora de Hotel',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
-    number: '002',
+    number: '008',
     title: 'Ya no puedo acceder a Ciutat Vella',
     author: 'Cristina García – Dependienta',
   },
@@ -102,9 +104,11 @@ export default function Section5() {
           {/* TestimonialCard solo, sin texto adicional ni stack.
               hasShadow=false porque ya no está dentro del stack
               (en el stack la sombra hacia arriba sugería las cards
-              traseras; suelta no tiene sentido). */}
+              traseras; suelta no tiene sentido).
+              Última testimonial escrita del conteo global:
+              Section 1: 001-002 · Section 4: 003-004 · aquí: 005. */}
           <TestimonialCard
-            number="001"
+            number="005"
             name="Cris"
             age={36}
             quote="Yo sigo compartiendo piso con otras personas. En general ya no resulta sencillo buscar un piso y no, encontrar un piso cerca de mi trabajo actualmente no es una opción. El foco es: primero que encuentre un piso y segundo si podré pagarlo. Fin"
