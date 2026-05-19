@@ -174,39 +174,44 @@ export default function AudioCardCarousel({
       </div>
 
       {/* ── Dots — centrados bajo la card activa de la izquierda en
-          align="left", o globalmente en align="center". ── */}
-      <div
-        className="flex items-center gap-2 mt-5 justify-center"
-        style={isLeftAligned && ready ? { width: cardWidth } : undefined}
-      >
-        {items.map((_, i) => {
-          const isActive = i === activeIndex
-          return (
-            <motion.button
-              key={i}
-              onClick={() => setActiveIndex(i)}
-              className={`
-                rounded-full cursor-pointer transition-colors duration-300
-                ${isActive ? 'bg-text-disabled' : 'bg-border-subtle hover:bg-border-default'}
-                focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-300
-              `}
-              animate={{
-                width: isActive ? DOT_SIZE_ACTIVE : DOT_SIZE_INACTIVE,
-                height: isActive ? DOT_SIZE_ACTIVE : DOT_SIZE_INACTIVE,
-              }}
-              initial={false}
-              transition={{
-                type: 'spring',
-                stiffness: 360,
-                damping: 22,
-                mass: 0.8,
-              }}
-              aria-label={`Ir al testimonio ${i + 1}`}
-              aria-current={isActive ? 'true' : undefined}
-            />
-          )
-        })}
-      </div>
+          align="left", o globalmente en align="center".
+          Solo se renderizan cuando hay más de 2 cards (= 3 o más):
+          con 1 o 2 cards no aporta navegación (ambas ya conviven en
+          pantalla) y los dots quedan ruidosos. */}
+      {needsScroll && (
+        <div
+          className="flex items-center gap-2 mt-5 justify-center"
+          style={isLeftAligned && ready ? { width: cardWidth } : undefined}
+        >
+          {items.map((_, i) => {
+            const isActive = i === activeIndex
+            return (
+              <motion.button
+                key={i}
+                onClick={() => setActiveIndex(i)}
+                className={`
+                  rounded-full cursor-pointer transition-colors duration-300
+                  ${isActive ? 'bg-text-disabled' : 'bg-border-subtle hover:bg-border-default'}
+                  focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-300
+                `}
+                animate={{
+                  width: isActive ? DOT_SIZE_ACTIVE : DOT_SIZE_INACTIVE,
+                  height: isActive ? DOT_SIZE_ACTIVE : DOT_SIZE_INACTIVE,
+                }}
+                initial={false}
+                transition={{
+                  type: 'spring',
+                  stiffness: 360,
+                  damping: 22,
+                  mass: 0.8,
+                }}
+                aria-label={`Ir al testimonio ${i + 1}`}
+                aria-current={isActive ? 'true' : undefined}
+              />
+            )
+          })}
+        </div>
+      )}
     </div>
   )
 }
