@@ -53,14 +53,14 @@ const AUDIO_ITEMS = [
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '007',
-    title: 'El barrio del Carmen ya no es lo que era',
-    author: 'Lucía Martínez – Limpiadora de Hotel',
+    title: 'Se ve como un trabajo de paso',
+    author: 'Lucía – Camarera de pisos',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '008',
-    title: 'Ya no puedo acceder a Ciutat Vella',
-    author: 'Cristina García – Dependienta',
+    title: 'Es un trabajo absolutamente invisible',
+    author: 'Teresa Alvarruiz – Camarera',
   },
 ]
 

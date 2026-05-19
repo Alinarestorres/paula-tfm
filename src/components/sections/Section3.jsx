@@ -29,26 +29,26 @@ const AUDIO_ITEMS = [
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '003',
-    title: 'El barrio del Carmen ya no es lo que era',
-    author: 'Lucía Martínez – Limpiadora de Hotel',
+    title: 'Es fácil subir de horas pero aguantar es muy duro.',
+    author: 'Lucía – Camarera de pisos',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '004',
-    title: 'Ya no puedo acceder a Ciutat Vella',
-    author: 'Cristina García – Dependienta',
+    title: 'Me dejaré próximamente el empleo por esta inestabilidad.',
+    author: 'Cristina Blanco – Dependienta',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '005',
-    title: 'Mi vida en València es trabajar y dormir',
-    author: 'Pendiente – Pendiente de definir',
+    title: 'Medidas de conciliación no tengo ninguna porque trabajo todos los días',
+    author: 'Lucía – Camarera de pisos',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '006',
-    title: 'El turismo nos ha cambiado el barrio',
-    author: 'Pendiente – Pendiente de definir',
+    title: 'Aún faltan algunas cositas',
+    author: 'Cristina Blanco – Dependienta',
   },
 ]
 

@@ -193,12 +193,19 @@ export default function AudioCard({
         </span>
       </header>
 
-      {/* ── Contenido: título + autor ── */}
-      <div className="pt-10 pb-6">
-        <h3 className={`font-sans font-bold text-[22px] leading-7 tracking-[-0.01em] ${s.title}`}>
+      {/* ── Contenido: título + autor ──
+          `truncate` en el <h3> corta el título a una sola línea con
+          "…" cuando no cabe en el ancho de la card. El title HTML
+          permite ver el texto completo en tooltip nativo del browser
+          al hacer hover, sin sustituir el comportamiento accesible. */}
+      <div className="pt-10 pb-6 min-w-0">
+        <h3
+          className={`font-sans font-bold text-[22px] leading-7 tracking-[-0.01em] truncate ${s.title}`}
+          title={title}
+        >
           {title}
         </h3>
-        <p className={`font-sans text-sm leading-[22px] mt-2 ${s.author}`}>
+        <p className={`font-sans text-sm leading-[22px] mt-2 truncate ${s.author}`} title={author}>
           {author}
         </p>
       </div>

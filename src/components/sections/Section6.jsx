@@ -188,8 +188,8 @@ export default function Section6() {
           <AudioCard
             label="TESTIMONIO AUDITIVO"
             number="009"
-            title="El barrio del Carmen ya no es lo que era"
-            author="Lucía Martínez – Limpiadora de Hotel"
+            title="Es un trabajo estacional y en momentos con fallas o verano el transporte puede fallar"
+            author="Lucía – Camarera de pisos"
           />
         </div>
       </div>

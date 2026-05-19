@@ -21,19 +21,20 @@ import AudioCardCarousel from '../AudioCardCarousel'
    Audio carousel con 2 cards (sin src aún — pendiente de subir).
    ════════════════════════════════════════════════════════════════ */
 
+/* Cards 001-002 del conteo global de testimonios auditivos. */
 const AUDIO_ITEMS = [
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '001',
-    title: 'El barrio del Carmen ya no es lo que era',
-    author: 'Lucía Martínez – Limpiadora de Hotel',
+    title: 'Se aprovechan un poco de nuestra disposición y nuestro tiempo.',
+    author: 'Cristina Blanco – Dependienta',
     /* src pendiente de añadir */
   },
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '002',
-    title: 'Ya no puedo acceder a Ciutat Vella',
-    author: 'Cristina García – Dependienta',
+    title: 'Las jornadas completas las suelen tener las personas más mayores.',
+    author: 'Teresa Alvarruiz – Camarera',
     /* src pendiente de añadir */
   },
 ]
