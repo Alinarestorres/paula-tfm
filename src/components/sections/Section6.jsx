@@ -66,7 +66,7 @@ const MAP_LEGEND = [
 
 export default function Section6() {
   return (
-    <section id="seccion-6" className="pt-24 pb-12 flex flex-col gap-16">
+    <section id="seccion-6" className="pt-24 pb-12 flex flex-col gap-20">
 
       {/* ── Título + párrafos introductorios ──
           Wrapper propio con gap-6 (24px) para que el título quede
@@ -95,21 +95,21 @@ export default function Section6() {
         </div>
       </div>
 
-      {/* ── Mapa interactivo + leyenda debajo ──
-          El mapa va dentro de un contenedor con fondo oscuro #1A1A1C
-          (mismo negro de la AudioCard activa) y esquinas redondeadas
-          24px. overflow-hidden recorta el SVG a las esquinas; la
-          relación 16:9 del propio MapValenciaProvincia define la
-          altura del contenedor. */}
-      <div className="flex flex-col gap-4">
-        <div className="bg-[#1A1A1C] rounded-3xl overflow-hidden">
-          <MapValenciaProvincia data={COMARCA_DATA} />
-        </div>
-        <div className="flex flex-wrap gap-3 pl-1">
+      {/* ── Mapa interactivo + leyenda integrada ──
+          Map y leyenda comparten el mismo contenedor oscuro #1A1A1C
+          (mismo negro de la AudioCard activa, esquinas 24px). El mapa
+          se renderiza edge-to-edge (16:9 sin padding) y debajo, dentro
+          del mismo recuadro, la leyenda con padding lateral e inferior
+          para que respire respecto al borde. Texto en text-text-disabled
+          (#B4B5B5) para legibilidad sobre el fondo oscuro, mismo token
+          que la AudioCard activa usa para sus labels. */}
+      <div className="bg-[#1A1A1C] rounded-3xl overflow-hidden">
+        <MapValenciaProvincia data={COMARCA_DATA} />
+        <div className="flex flex-wrap gap-x-4 gap-y-2 px-6 pb-6 pt-2">
           {MAP_LEGEND.map(l => (
             <div key={l.label} className="flex items-center gap-2">
               <span className={`w-3 h-3 rounded ${l.cls}`} />
-              <span className="font-sans text-xs text-text-tertiary">
+              <span className="font-sans text-xs text-text-disabled">
                 {l.label}
               </span>
             </div>
