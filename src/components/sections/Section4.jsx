@@ -80,7 +80,7 @@ export default function Section4() {
           centrada y sin deformación. */}
       <div className="flex flex-col gap-6">
         <h2 className="font-sans font-medium text-4xl lg:text-[48px] leading-[1.125] tracking-[-0.01em] text-text-primary">
-          Género y cuidados
+          ¿Desafíos de gestión o fractura social?
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
