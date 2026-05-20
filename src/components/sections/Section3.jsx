@@ -155,15 +155,20 @@ export default function Section3() {
               Este descontento tiene una raíz multifactorial. Los y las
               expertas en turismo lo definen como la masificación que
               condiciona la vida en los destinos haciendo de éstos, simplemente
-              un activo turístico, una “ciudad turística”. Existe, además, un
-              componente moral y emocional complejo: el conflicto nos
-              interpela directamente porque, en algún momento, todos y
-              todas hemos sido o seremos turistas.
+              un activo turístico, una{' '}
+              <strong className="font-bold">“ciudad turística”</strong>.
+              Existe, además, un componente moral y emocional complejo: el
+              conflicto nos interpela directamente porque, en algún momento,
+              todos y todas hemos sido o seremos turistas.
             </p>
             <p className="font-sans text-base leading-7">
-              Ante esta crisis, el “Manifiesto Turismo Que Suma” (2025),
-              impulsado por EXCELTUR, propone una hoja de ruta para un turismo
-              responsable y regenerativo basado en cinco ejes estratégicos:
+              Ante esta crisis, el{' '}
+              <strong className="font-bold">
+                “Manifiesto Turismo Que Suma” (2025),
+              </strong>{' '}
+              impulsado por EXCELTUR, propone una hoja de ruta para un
+              turismo responsable y regenerativo basado en cinco ejes
+              estratégicos:
             </p>
           </div>
         </div>
