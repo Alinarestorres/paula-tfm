@@ -91,7 +91,11 @@ export default function AudioCard({
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
 
-  /* Sincroniza estado React con eventos del <audio> (solo si activa) */
+  /* Sincroniza estado React con eventos del <audio> (solo si activa).
+     Los listeners `play`/`pause` son cruciales: cuando otra AudioCard
+     nos pausa programáticamente (mutex global, ver más abajo), el
+     evento `pause` se dispara y aquí actualizamos React → el botón
+     de esta card vuelve a mostrar el icono de play correctamente. */
   useEffect(() => {
     if (disabled) return
     const audio = audioRef.current
@@ -99,27 +103,52 @@ export default function AudioCard({
     const onTime = () => setCurrentTime(audio.currentTime)
     const onLoaded = () => setDuration(audio.duration || 0)
     const onEnded = () => setPlaying(false)
+    const onPlay = () => setPlaying(true)
+    const onPause = () => setPlaying(false)
     audio.addEventListener('timeupdate', onTime)
     audio.addEventListener('loadedmetadata', onLoaded)
     audio.addEventListener('durationchange', onLoaded)
     audio.addEventListener('ended', onEnded)
+    audio.addEventListener('play', onPlay)
+    audio.addEventListener('pause', onPause)
+
+    /* Mutex global de reproducción: solo una card de audio puede
+       sonar a la vez en toda la página. Cuando CUALQUIER otro
+       <audio> arranca su reproducción, pausamos el nuestro.
+       · El evento `play` NO burbujea → necesita capture: true.
+       · Comparamos por referencia con el elemento de esta card
+         para no auto-pausarnos cuando somos nosotros los que
+         empezamos. */
+    const onAnyAudioPlay = (e) => {
+      if (e.target !== audio && e.target instanceof HTMLAudioElement) {
+        audio.pause()
+      }
+    }
+    document.addEventListener('play', onAnyAudioPlay, true)
+
     return () => {
       audio.removeEventListener('timeupdate', onTime)
       audio.removeEventListener('loadedmetadata', onLoaded)
       audio.removeEventListener('durationchange', onLoaded)
       audio.removeEventListener('ended', onEnded)
+      audio.removeEventListener('play', onPlay)
+      audio.removeEventListener('pause', onPause)
+      document.removeEventListener('play', onAnyAudioPlay, true)
     }
   }, [src, disabled])
 
+  /* togglePlay delega el cambio de estado a los listeners `play`/
+     `pause` del propio <audio>: ellos llaman a setPlaying. Así
+     funciona también cuando el cambio viene desde fuera (otra
+     card disparando el mutex global, o el evento `ended`). */
   const togglePlay = () => {
     if (disabled) return
     const audio = audioRef.current
     if (!audio) return
-    if (playing) {
-      audio.pause()
-      setPlaying(false)
+    if (audio.paused) {
+      audio.play().catch(() => {})
     } else {
-      audio.play().then(() => setPlaying(true)).catch(() => {})
+      audio.pause()
     }
   }
 

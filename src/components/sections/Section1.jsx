@@ -33,8 +33,13 @@ export default function Section1() {
   return (
     <section id="seccion-1" className="pt-24 pb-12 flex flex-col gap-8">
 
-      {/* Body text */}
+      {/* Body text — 4 párrafos separados por gap-6 (24px) */}
       <div className="flex flex-col gap-6 text-text-secondary">
+        <p className="font-sans text-base leading-7">
+          El eslogan institucional que se encuentran millones de visitantes
+          cuando llegan a Valencia oculta la realidad de quienes habitan y
+          trabajan en ella.
+        </p>
         <p className="font-sans text-base leading-7">
           El turismo suele proyectarse como el principal motor económico de
           las ciudades, pero rara vez el foco recae sobre las manos que lo
@@ -52,6 +57,13 @@ export default function Section1() {
           trabajan en el sector a menudo no pueden permitirse residir cerca
           de sus empleos. De este modo, terminan sosteniendo un engranaje
           que, lejos de beneficiarles, les expulsa.
+        </p>
+        <p className="font-sans text-base leading-7">
+          Este reportaje cruza los testimonios de varias trabajadoras con
+          la realidad sociolaboral de la ciudad para responder a una
+          pregunta incómoda: ¿para quién se diseña un destino internacional
+          si las personas que lo hacen funcionar ya no pueden permitirse
+          vivir en él?
         </p>
       </div>
 
