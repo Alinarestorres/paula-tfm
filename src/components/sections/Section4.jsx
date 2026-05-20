@@ -41,7 +41,8 @@ const TESTIMONIALS = [
   {
     number: '004',
     name: 'Natalia',
-    age: 27,
+    age: 38,
+    avatarSrc: '/Tere.png',
     quote: 'Un turista responsable no afectaría negativamente a nuestro día a día, pero València está en venta y el turismo nos está echando de nuestra propia ciudad. A la masificación estacional, que genera picos de precariedad y contratos basura, se suma la falta de civismo. Mi calidad de vida ha caído en picado; el problema de la vivienda me afecta emocionalmente de forma grave.',
     extraText:
       'Para otras trabajadoras, la solución no es únicamente un cambio de mentalidad individual, sino que requiere de una intervención institucional más amplia y contundente.\n\nNatalia enumera una serie de cambios que considera necesarios y acaba por resumirlo como “tantas cosas…”.',

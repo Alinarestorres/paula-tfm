@@ -21,11 +21,11 @@ const TESTIMONIOS = [
   },
   {
     name: 'Natalia',
-    age: 41,
+    age: 38,
     number: '002',
-    avatarInitials: 'N',
+    avatarSrc: '/Tere.png',
     quote: 'El turismo me está afectando tanto a nivel personal que me estoy planteando cambiar de ciudad. El alquiler que tengo en el centro es muy bajo comparado con el resto porque es antiguo, no podría mudarme a otro sitio. Pero el descanso, el ocio y la vida cotidiana en general, se hace insoportable.',
-    extraText: 'En cambio, Natalia (41 años) pone el foco en las consecuencias cotidianas de habitar el centro debido a la saturación.\n\nEs una de las pocas "afortunadas" que continúa resistiendo con su residencia y su puesto de trabajo en una tienda en el centro de Valencia. Sin embargo, se encuentra en una situación de fragilidad y hastío.',
+    extraText: 'En cambio, Natalia (38 años) pone el foco en las consecuencias cotidianas de habitar el centro debido a la saturación.\n\nEs una de las pocas "afortunadas" que continúa resistiendo con su residencia y su puesto de trabajo en una tienda en el centro de Valencia. Sin embargo, se encuentra en una situación de fragilidad y hastío.',
   },
 ]
 
