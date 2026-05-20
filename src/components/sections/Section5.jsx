@@ -48,18 +48,24 @@ const PRICE_CARDS = [
 ]
 
 /* Continuación de la numeración global de testimonios auditivos.
-   Section 2: 001-002 · Section 3: 003-006 · aquí: 007-008. */
+   Section 2: 001-003 · Section 3: 004-008 · aquí: 009-011. */
 const AUDIO_ITEMS = [
   {
     label: 'TESTIMONIO AUDITIVO',
-    number: '007',
-    title: 'Se ve como un trabajo de paso',
-    author: 'Lucía – Camarera de pisos',
+    number: '009',
+    title: 'En el momento en el que nos echen o que se acabe el contrato, yo valoro muy fuertemente irme de la ciudad',
+    author: 'Cris Blanco – Dependienta',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
-    number: '008',
-    title: 'Es un trabajo absolutamente invisible',
+    number: '010',
+    title: 'Preferimos vivir en un pueblo antes que en la ciudad',
+    author: 'Lucía Castro – Camarera de Pisos',
+  },
+  {
+    label: 'TESTIMONIO AUDITIVO',
+    number: '011',
+    title: 'Bastante complicado vivir cerca de tu trabajo',
     author: 'Teresa Alvarruiz – Camarera',
   },
 ]

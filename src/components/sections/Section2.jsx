@@ -21,13 +21,13 @@ import AudioCardCarousel from '../AudioCardCarousel'
    Audio carousel con 2 cards (sin src aún — pendiente de subir).
    ════════════════════════════════════════════════════════════════ */
 
-/* Cards 001-002 del conteo global de testimonios auditivos. */
+/* Cards 001-003 del conteo global de testimonios auditivos. */
 const AUDIO_ITEMS = [
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '001',
     title: 'Se aprovechan un poco de nuestra disposición y nuestro tiempo.',
-    author: 'Cristina Blanco – Dependienta',
+    author: 'Cris Blanco – Dependienta',
     /* src pendiente de añadir */
   },
   {
@@ -35,6 +35,13 @@ const AUDIO_ITEMS = [
     number: '002',
     title: 'Las jornadas completas las suelen tener las personas más mayores.',
     author: 'Teresa Alvarruiz – Camarera',
+    /* src pendiente de añadir */
+  },
+  {
+    label: 'TESTIMONIO AUDITIVO',
+    number: '003',
+    title: 'Es fácil subir de horas pero aguantar es muy duro',
+    author: 'Lucía Castro – Camarera de Pisos',
     /* src pendiente de añadir */
   },
 ]

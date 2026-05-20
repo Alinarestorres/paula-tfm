@@ -183,13 +183,13 @@ export default function Section6() {
 
         <div className="self-start w-full">
           {/* Última card de audio de la landing en el conteo global:
-              Section 2: 001-002 · Section 3: 003-006 · Section 5: 007-008 ·
-              aquí: 009. */}
+              Section 2: 001-003 · Section 3: 004-008 · Section 5: 009-011 ·
+              aquí: 012. */}
           <AudioCard
             label="TESTIMONIO AUDITIVO"
-            number="009"
+            number="012"
             title="Es un trabajo estacional y en momentos con fallas o verano el transporte puede fallar"
-            author="Lucía – Camarera de pisos"
+            author="Lucía Castro – Camarera de Pisos"
           />
         </div>
       </div>

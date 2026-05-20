@@ -24,31 +24,37 @@ import AudioCardCarousel from '../AudioCardCarousel'
    ════════════════════════════════════════════════════════════════ */
 
 /* Numeración global continua de testimonios auditivos en la landing.
-   Section 2 abre con 001-002; aquí continuamos en 003-006. */
+   Section 2: 001-003 · aquí continuamos en 004-008. */
 const AUDIO_ITEMS = [
   {
     label: 'TESTIMONIO AUDITIVO',
-    number: '003',
-    title: 'Es fácil subir de horas pero aguantar es muy duro.',
-    author: 'Lucía – Camarera de pisos',
-  },
-  {
-    label: 'TESTIMONIO AUDITIVO',
     number: '004',
-    title: 'Me dejaré próximamente el empleo por esta inestabilidad.',
-    author: 'Cristina Blanco – Dependienta',
+    title: 'Me dejaré próximamente el empleo por esta inestabilidad que al final perturba tu día a día y tu organización',
+    author: 'Cris Blanco – Dependienta',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '005',
     title: 'Medidas de conciliación no tengo ninguna porque trabajo todos los días',
-    author: 'Lucía – Camarera de pisos',
+    author: 'Lucía Castro – Camarera de Pisos',
   },
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '006',
     title: 'Aún faltan algunas cositas',
-    author: 'Cristina Blanco – Dependienta',
+    author: 'Cris Blanco – Dependienta',
+  },
+  {
+    label: 'TESTIMONIO AUDITIVO',
+    number: '007',
+    title: 'Se ve como un trabajo de paso',
+    author: 'Lucía Castro – Camarera de Pisos',
+  },
+  {
+    label: 'TESTIMONIO AUDITIVO',
+    number: '008',
+    title: 'Es un trabajo absolutamente invisible',
+    author: 'Teresa Alvarruiz – Camarera',
   },
 ]
 
