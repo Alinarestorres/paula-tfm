@@ -70,13 +70,19 @@ export default function Section2() {
               cambio de condiciones, en muchos casos, de extrema precariedad.
             </p>
             <p className="font-sans text-base leading-7">
-              El Informe de CCOO sobre la situación sociolaboral de las
-              mujeres en el País Valencià (2026) es revelador: la ocupación
-              femenina se concentra masivamente en el sector servicios. Un
-              86,2% de las mujeres ocupadas desempeñan su labor en esta área,
-              frente al 62,4% de los hombres. Esta segregación convierte a
-              los servicios en la única rama de actividad con predominio
-              femenino (53,6% del total).
+              El{' '}
+              <strong className="font-bold">
+                Informe de CCOO sobre la situación sociolaboral de las
+                mujeres en el País Valencià (2026)
+              </strong>{' '}
+              es revelador: la ocupación femenina se concentra masivamente
+              en el sector servicios.{' '}
+              <strong className="font-bold">
+                Un 86,2% de las mujeres ocupadas desempeñan su labor en
+                esta área, frente al 62,4% de los hombres.
+              </strong>{' '}
+              Esta segregación convierte a los servicios en la única rama
+              de actividad con predominio femenino (53,6% del total).
             </p>
             <p className="font-sans text-base leading-7">
               No obstante, esta alta representación no se traduce en calidad
@@ -114,10 +120,13 @@ export default function Section2() {
 
         <div className="flex flex-col gap-6 text-text-secondary">
           <p className="font-sans text-base leading-7">
-            Lucía (53 años) representa el trasfondo del éxito turístico en el
-            centro de Valencia. Aunque celebra haber dejado atrás la
-            precariedad de trabajos a media jornada para alcanzar estabilidad
-            de un contrato completo, denuncia que el volumen de trabajo es
+            <strong className="font-bold">
+              Lucía (51 años, camarera de pisos)
+            </strong>{' '}
+            representa el trasfondo del éxito turístico en el centro de
+            Valencia. Aunque celebra haber dejado atrás la precariedad de
+            trabajos a media jornada para alcanzar estabilidad de un
+            contrato completo, denuncia que el volumen de trabajo es
             asfixiante en los hoteles. “Nuestras jornadas son larguísimas”,
             afirma.
           </p>

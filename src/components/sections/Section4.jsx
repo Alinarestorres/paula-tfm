@@ -146,6 +146,26 @@ export default function Section4() {
             88px efectivos entre el TestimonialCardStack y el bloque
             "Otras trabajadoras…" para una separación clara. */}
       <OpinionCardGroup rows={OPINION_ROWS} className="mt-12" />
+
+      {/* ── Bloque 4: párrafos de cierre del bloque de opiniones ── */}
+      <div className="flex flex-col gap-6 text-text-secondary">
+        <p className="font-sans text-base leading-[26px]">
+          En definitiva, la brecha entre la València idílica de las
+          estadísticas y la realidad de la calle evidencia que el debate
+          no se mueve únicamente en un plano técnico de administración. No
+          se trata solo de gestionar los flujos de visitantes, sino de
+          frenar la fractura social donde los costes públicos y vecinales
+          sostienen el beneficio privado.
+        </p>
+        <p className="font-sans text-base leading-[26px]">
+          Un escenario en el que, como explican las propias trabajadoras,
+          se corre el riesgo de dejar de pertenecer a quienes la habitan
+          para convertirse en un decorado pensado por y para el turismo.
+          Con todo, la realidad nunca es homogénea y también hay espacio
+          para voces que observan el turismo con optimismo y afirman que
+          a ellas sí les gusta.
+        </p>
+      </div>
     </section>
   )
 }

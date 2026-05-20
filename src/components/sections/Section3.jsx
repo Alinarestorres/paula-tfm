@@ -172,6 +172,30 @@ export default function Section3() {
       {/* ── Bloque 2: Manifesto component ── */}
       <Manifesto />
 
+      {/* ── Bloque 2b: Párrafo institucional + pregunta apertura
+            (segunda mitad de la pregunta apertura va en negrita,
+            atraviesa los dos <p>: desde "Mejorar la percepción"
+            hasta "laboral y conciliación?"). */}
+      <div className="flex flex-col gap-6 text-text-secondary">
+        <p className="font-sans text-base leading-7">
+          A un nivel local, también se incluye dentro del Plan Estratégico
+          de Turismo (2025-2028) de la Fundación Visit València en
+          colaboración con la Generalitat Valenciana que incluye en uno de
+          sus ejes de actuación:{' '}
+          <strong className="font-bold">
+            Mejorar la percepción del turismo entre la ciudadanía y los
+            propios trabajadores como sector para el desarrollo profesional
+            y empleo de calidad.
+          </strong>
+        </p>
+        <p className="font-sans text-base leading-7">
+          <strong className="font-bold">
+            ¿Qué opinan las trabajadoras de las propuestas sobre
+            dignificación laboral y conciliación?
+          </strong>
+        </p>
+      </div>
+
       {/* ── Bloque 3: Audio carousel (4 cards) — sin breakout, las
             cards se dimensionan al ancho de columna en runtime. */}
       <AudioCardCarousel items={AUDIO_ITEMS} align="left" />
