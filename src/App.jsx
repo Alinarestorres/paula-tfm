@@ -18,6 +18,7 @@ import ManifestoPlayground from './playground/ManifestoPlayground'
 import PriceCardPlayground from './playground/PriceCardPlayground'
 import OpinionCardPlayground from './playground/OpinionCardPlayground'
 import InfographicPlayground from './playground/InfographicPlayground'
+import QuoteXXLPlayground from './playground/QuoteXXLPlayground'
 import './index.css'
 
 /* Botón flotante discreto que da acceso al playground desde la landing. */
@@ -116,5 +117,6 @@ export default function App() {
   if (hash === '#/playground/price-card') return <PriceCardPlayground />
   if (hash === '#/playground/opinion-card') return <OpinionCardPlayground />
   if (hash === '#/playground/infographic') return <InfographicPlayground />
+  if (hash === '#/playground/quote-xxl') return <QuoteXXLPlayground />
   return <MainLanding />
 }

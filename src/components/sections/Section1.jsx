@@ -1,4 +1,5 @@
 import TestimonialCardStack from '../TestimonialCardStack'
+import QuoteXXL from '../QuoteXXL'
 
 /* ════════════════════════════════════════════════════════════════
    Section1 — Primera sección de contenido de la landing
@@ -32,6 +33,9 @@ const TESTIMONIOS = [
 export default function Section1() {
   return (
     <section id="seccion-1" className="pt-24 pb-12 flex flex-col gap-8">
+
+      {/* Cita destacada — eslogan institucional de Visit València */}
+      <QuoteXXL />
 
       {/* Body text — 4 párrafos separados por gap-6 (24px) */}
       <div className="flex flex-col gap-6 text-text-secondary">

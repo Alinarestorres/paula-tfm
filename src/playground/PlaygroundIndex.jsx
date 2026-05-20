@@ -53,6 +53,11 @@ const COMPONENTS = [
     name: 'Infographic',
     desc: 'Infografía de porcentaje sobre 100 dots. Número con cuenta animada de 0 al objetivo y dots que se iluminan progresivamente en sincronía.',
   },
+  {
+    slug: 'quote-xxl',
+    name: 'Quote XXL',
+    desc: 'Cita destacada con icono circular azul y atribución en caja oscura a la derecha. Responsive: la caja derecha queda pegada al borde y crece el espacio entre cita y caja al ampliar el viewport.',
+  },
 ]
 
 export default function PlaygroundIndex() {
