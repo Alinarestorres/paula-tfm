@@ -18,7 +18,7 @@ import AudioCard from '../AudioCard'
        ┌────────────────────┬────────────────────────────────┐
        │ Infographic 73%    │ Detrás de la red…              │
        │ + dots 100%        │ En este flujo diario…          │
-       │ + texto descriptivo│ Profesionales como Laura…      │
+       │ + texto descriptivo│                                │
        └────────────────────┴────────────────────────────────┘
 
    · Bloque 4 — Grid 2 cols:
@@ -143,12 +143,6 @@ export default function Section6() {
             pasajeros, seguidos de cerca por sectores esenciales pero a
             menudo invisibilizados como la limpieza (6,3%) y los cuidados o
             empleo del hogar (5,8%).
-          </p>
-          <p className="font-sans text-base leading-[26px]">
-            Profesionales como Laura, Cristina o Lucía representan a parte
-            de ese personal que llenan los convoyes, confirmando que la red
-            de transporte público es una herramienta indispensable de la
-            clase trabajadora valenciana.
           </p>
         </div>
       </div>
