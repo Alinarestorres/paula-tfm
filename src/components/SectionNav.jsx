@@ -27,6 +27,7 @@ const DEFAULT_SECTIONS = [
   { id: 'seccion-4', label: '¿Desafíos de gestión o fractura social?' },
   { id: 'seccion-5', label: 'El derecho a techo' },
   { id: 'seccion-6', label: 'Precio de la vivienda' },
+  { id: 'seccion-7', label: 'Conclusiones' },
 ]
 
 export default function SectionNav({ sections = DEFAULT_SECTIONS }) {
