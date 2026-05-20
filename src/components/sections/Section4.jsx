@@ -33,6 +33,7 @@ const TESTIMONIALS = [
     number: '003',
     name: 'Laura',
     age: 36,
+    avatarSrc: '/Laura.png',
     quote: 'Las malas condiciones y los horarios interminables existen porque nosotros mismos queremos consumir a cualquier hora. En los países de origen de muchos turistas internacionales, el comercio cierra mucho antes. Los límites empiezan por nosotros mismos.',
     extraText:
       'Laura, trabajadora del sector, apunta a la responsabilidad compartida y hace autocrítica.',

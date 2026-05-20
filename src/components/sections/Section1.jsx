@@ -12,12 +12,12 @@ import TestimonialCardStack from '../TestimonialCardStack'
 
 const TESTIMONIOS = [
   {
-    name: 'Cristina',
+    name: 'Cris',
     age: 36,
     number: '001',
-    avatarInitials: 'C',
+    avatarSrc: '/Cris.png',
     quote: 'Un turista responsable no afectaría negativamente a nuestro día a día, pero València está en venta y el turismo nos está echando de nuestra propia ciudad. A la masificación estacional, que genera picos de precariedad y contratos basura, se suma la falta de civismo. Mi calidad de vida ha caído en picado; el problema de la vivienda me afecta emocionalmente de forma grave.',
-    extraText: 'Cristina lo describe con crudeza.\n\nVive el turismo como un proceso de expulsión directa y estructural. Denuncia la precariedad y el impacto que le genera en su calidad de vida un mercado de la vivienda que la empuja a mudarse cada dos por tres.',
+    extraText: 'Cris lo describe con crudeza.\n\nVive el turismo como un proceso de expulsión directa y estructural. Denuncia la precariedad y el impacto que le genera en su calidad de vida un mercado de la vivienda que la empuja a mudarse cada dos por tres.',
   },
   {
     name: 'Natalia',

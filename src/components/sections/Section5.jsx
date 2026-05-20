@@ -111,6 +111,7 @@ export default function Section5() {
             number="005"
             name="Cris"
             age={36}
+            avatarSrc="/Cris.png"
             quote="Yo sigo compartiendo piso con otras personas. En general ya no resulta sencillo buscar un piso y no, encontrar un piso cerca de mi trabajo actualmente no es una opción. El foco es: primero que encuentre un piso y segundo si podré pagarlo. Fin"
             hasShadow={false}
           />
