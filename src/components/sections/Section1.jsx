@@ -65,9 +65,11 @@ export default function Section1() {
         <p className="font-sans text-base leading-7">
           Este reportaje cruza los testimonios de varias trabajadoras con
           la realidad sociolaboral de la ciudad para responder a una
-          pregunta incómoda: ¿para quién se diseña un destino internacional
-          si las personas que lo hacen funcionar ya no pueden permitirse
-          vivir en él?
+          pregunta incómoda:{' '}
+          <strong className="font-bold">
+            ¿para quién se diseña un destino internacional si las personas
+            que lo hacen funcionar ya no pueden permitirse vivir en él?
+          </strong>
         </p>
       </div>
 

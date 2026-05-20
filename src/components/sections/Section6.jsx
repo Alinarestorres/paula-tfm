@@ -132,17 +132,25 @@ export default function Section6() {
             Detrás de la red de transporte también encontramos historias
             laborales más allá de los trayectos realizados. Según el índice
             de Satisfacción de Cliente para el año 2025 realizado por
-            Metrovalencia, el 73,3% de los usuarios se desplaza por motivos
-            laborales o académicos.
+            Metrovalencia,{' '}
+            <strong className="font-bold">
+              el 73,3% de los usuarios se desplaza por motivos laborales o
+              académicos.
+            </strong>
           </p>
           <p className="font-sans text-base leading-[26px]">
             En este flujo diario, los datos revelan que los y las
             trabajadoras del sector servicios son una parte sustancial de
-            este porcentaje. El comercio (13,5%) y la hostelería (9,6%) se
-            sitúan entre los principales sectores de actividad de los
+            este porcentaje.{' '}
+            <strong className="font-bold">
+              El comercio (13,5%) y la hostelería (9,6%)
+            </strong>{' '}
+            se sitúan entre los principales sectores de actividad de los
             pasajeros, seguidos de cerca por sectores esenciales pero a
-            menudo invisibilizados como la limpieza (6,3%) y los cuidados o
-            empleo del hogar (5,8%).
+            menudo invisibilizados como la{' '}
+            <strong className="font-bold">
+              limpieza (6,3%) y los cuidados o empleo del hogar (5,8%).
+            </strong>
           </p>
         </div>
       </div>

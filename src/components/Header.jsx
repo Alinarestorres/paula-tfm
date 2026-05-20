@@ -76,9 +76,8 @@ export default function Header() {
               lg:max-w-[535px]
             "
           >
-            Este informe detalla la situación actual de las trabajadoras
-            en el sector feminizado de servicios y atención al turismo
-            en la ciudad de València.
+            Un análisis multimedia sobre precariedad laboral, crisis de
+            la vivienda y género en la ciudad de València.
           </p>
 
           {/* Fila autora + tiempo de lectura */}
