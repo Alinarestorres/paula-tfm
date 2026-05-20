@@ -169,7 +169,7 @@ export default function Section6() {
             desplazamientos diarios.
           </p>
           <p className="font-sans text-base leading-[26px]">
-            Para mujeres como Laura, Cristina o Lucía, el trayecto diario
+            Para mujeres como Laura, Cris o Lucía, el trayecto diario
             que implica entre 20 y 40 minutos de ida al trabajo, supone una
             previsión marcada por andenes masificados, retrasos y la
             sensación de una ciudad colapsada.
