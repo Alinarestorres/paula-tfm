@@ -190,6 +190,7 @@ export default function Section6() {
             number="012"
             title="Es un trabajo estacional y en momentos con fallas o verano el transporte puede fallar"
             author="Lucía Castro – Camarera de Pisos"
+            src={encodeURI('/AUDIO 12_Trabajo-estacional_.mp3')}
           />
         </div>
       </div>

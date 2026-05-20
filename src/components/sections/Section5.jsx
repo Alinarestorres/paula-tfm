@@ -48,25 +48,29 @@ const PRICE_CARDS = [
 ]
 
 /* Continuación de la numeración global de testimonios auditivos.
-   Section 2: 001-003 · Section 3: 004-008 · aquí: 009-011. */
+   Section 2: 001-003 · Section 3: 004-008 · aquí: 009-011.
+   encodeURI() en src maneja espacios y caracteres especiales. */
 const AUDIO_ITEMS = [
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '009',
     title: 'En el momento en el que nos echen o que se acabe el contrato, yo valoro muy fuertemente irme de la ciudad',
     author: 'Cris Blanco – Dependienta',
+    src: encodeURI('/AUDIO 9_Nos echen.mp3'),
   },
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '010',
     title: 'Preferimos vivir en un pueblo antes que en la ciudad',
     author: 'Lucía Castro – Camarera de Pisos',
+    src: encodeURI('/AUDIO 10_Vivienda-Lucia.mp3'),
   },
   {
     label: 'TESTIMONIO AUDITIVO',
     number: '011',
     title: 'Bastante complicado vivir cerca de tu trabajo',
     author: 'Teresa Alvarruiz – Camarera',
+    src: encodeURI('/AUDIO 11_ Bastante complicado.mp3'),
   },
 ]
 
