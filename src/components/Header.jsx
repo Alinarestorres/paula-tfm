@@ -4,7 +4,7 @@
 
    Layout (desktop ≥ lg):
    ┌──────────────────────────────────────────────────────────────┐
-   │  pad-l 280 │ Las (294) │ gap 39 │ derecha (646) │ pad-r 64  │
+   │  pad-l 280 │ Las (auto) │ gap 20 │ derecha (646) │ pad-r 64 │
    └──────────────────────────────────────────────────────────────┘
    · "Las" arranca arriba del todo (pad-t 160).
    · La columna derecha se desplaza 74px más abajo para alinear
@@ -31,12 +31,15 @@ export default function Header() {
           lg:px-0 lg:pt-[160px] lg:pb-0 lg:pl-[280px] lg:pr-16
           lg:min-h-[598px]
           flex flex-col
-          lg:flex-row lg:items-start lg:gap-[39px]
+          lg:flex-row lg:items-start lg:gap-5
         "
       >
 
-        {/* ── Columna izquierda: "Las" ── */}
-        <div className="lg:w-[294px] lg:shrink-0 mb-2 lg:mb-0">
+        {/* ── Columna izquierda: "Las" ──
+            lg:w-auto (no fijo a 294) para que la columna se ajuste al
+            ancho real del glifo y el gap-5 (20px) sea la distancia
+            visual real entre "Las" y "que sostienen el centro.". */}
+        <div className="lg:w-auto lg:shrink-0 mb-2 lg:mb-0">
           <span
             className="
               font-display font-bold text-accent-600 block
