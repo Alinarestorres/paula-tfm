@@ -116,9 +116,7 @@ export default function Section4() {
               Resulta contradictorio que, mientras València encabeza los
               ránkings de calidad de vida en el sur de Europa según el índice
               Numbeo, quienes sostienen la industria perciben la ciudad como
-              una realidad asfixiante. Una paradoja, una ciudad excelente para
-              visitar y teletrabajar choca con la percepción de otros y otras
-              trabajadoras.
+              una realidad asfixiante.
             </p>
           </div>
 
