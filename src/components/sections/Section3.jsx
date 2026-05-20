@@ -157,8 +157,8 @@ export default function Section3() {
               condiciona la vida en los destinos haciendo de éstos, simplemente
               un activo turístico, una “ciudad turística”. Existe, además, un
               componente moral y emocional complejo: el conflicto nos
-              interpela directamente porque, en algún momento, todos hemos
-              sido o seremos turistas.
+              interpela directamente porque, en algún momento, todos y
+              todas hemos sido o seremos turistas.
             </p>
             <p className="font-sans text-base leading-7">
               Ante esta crisis, el “Manifiesto Turismo Que Suma” (2025),
